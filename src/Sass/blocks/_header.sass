@@ -1,3 +1,5 @@
+@import "../base/_variables"
+
 .header
     padding-top: 48px
     &__logo
@@ -6,4 +8,28 @@
         display: flex
         align-items: center
     &__other
+        width: 170px
         display: flex
+        justify-content: space-between
+    &__profile-circle
+        width: 51px
+        height: 51px
+        background-color: $main-color
+        border-radius: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        cursor: pointer
+    &__profile
+        height: 30px
+        width: 30px
+    &__lng
+        width: 46px
+        display: flex
+        align-content: center
+        flex-wrap: wrap
+        justify-content: space-between
+    &__search
+        cursor: pointer
+    &__arrow
+        cursor: pointer
