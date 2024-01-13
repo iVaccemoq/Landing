@@ -1,0 +1,133 @@
+@import "../base/_variables"
+.cards
+    list-style: none
+    padding: 0
+    margin: 0
+    display: flex
+    flex-wrap: wrap
+    column-gap: 60px
+    row-gap: 30px
+    &__card
+        padding: 24px 21px 27px 22px
+        width: 400px
+        height: 341px
+        background-color: $main-color
+        backdrop-filter: blur(2px)
+        border-radius: 30px
+        position: relative
+        overflow: hidden
+    &__title
+        color: white
+        font-family: Mulish
+        font-size: 24px
+        font-style: normal
+        font-weight: 800
+        line-height: 120%
+        letter-spacing: 0.24px
+    &__level
+        color: $level
+        font-family: Mulish
+        font-size: 24px
+        font-style: normal
+        font-weight: 800
+        line-height: 120%
+        letter-spacing: 0.24px
+    &__name
+        border-radius: 60px
+        background: $name-block
+        width: 184px
+        height: 32px
+        color: #000
+        font-family: Montserrat
+        font-size: 14px
+        font-style: normal
+        font-weight: 600
+        line-height: 150%
+        letter-spacing: 0.14px
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-left: 144px
+        margin-top: 25px
+    &__cost
+        color: #FFF
+        font-family: Mulish
+        font-size: 40px
+        font-style: normal
+        font-weight: 800
+        line-height: 40px
+        letter-spacing: 0.4px
+        margin-right: 8px
+    &__discount
+        color: #FFF
+        font-family: Mulish
+        font-size: 10px
+        font-style: normal
+        font-weight: 600
+        line-height: 120%
+        letter-spacing: 0.1px
+        border-radius: 199px
+        background: $dark-purple
+        width: 48px
+        height: 18px
+        display: flex
+        align-items: center
+        justify-content: center
+    &__cost-wrapper
+        position: absolute
+        right: 25px
+        display: flex
+        align-items: flex-end
+        text-align: center
+        margin-top: 50px
+    &__old-price
+        position: absolute
+        right: 51px
+        bottom: 81px
+        color: #FFF
+        font-family: Mulish
+        font-size: 20px
+        font-style: normal
+        font-weight: 800
+        line-height: 120%
+        letter-spacing: 0.2px
+        text-decoration: line-through
+        text-decoration-color: $dark-purple
+    &__more
+        display: flex
+        position: absolute
+        right: 25px
+        bottom: 27px
+        text-decoration: none
+        &:hover
+            text-decoration: none
+        
+    &__text
+        margin-right: 5px
+        color: #FFF
+        font-family: Mulish
+        font-size: 18px
+        font-style: normal
+        font-weight: 500
+        line-height: 120%
+        letter-spacing: 0.18px
+        
+    &__bg
+        position: absolute
+        top: 40px
+        right: 18px
+        z-index: -1
+    &__name-arrow
+        position: absolute
+        left: 145px
+        top: 140px
+        z-index: 1
+    &__woman
+        position: absolute
+        bottom: 0
+        left: 0
+    
+    
+        
+    
+
