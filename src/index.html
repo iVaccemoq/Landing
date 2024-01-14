@@ -26,7 +26,13 @@
                     <div class="header__lng">
                         <div class="header__ru">RU</div>
                         <img src="./icons/arrow.svg" alt="arrow" class="header__arrow">
+                        <select>
+                            <option value="option1">Английский</option>
+                            <option value="option2">Французский</option>
+                            <option value="option3">Немецкий</option>
+                        </select>
                     </div>
+                    <img src="./icons/hamburger.svg" alt="hamburger" class="header__hamburger">
                 </div>
             </div>
         </div>
@@ -35,25 +41,37 @@
         <div class="container">
             <div class="main__wrapper">
                 <aside class="filters-panel">
-                    <button class="filters-panel__button">
-                        Язык
-                        <img src="./icons/arrowWhite.svg" alt="arrow" class="filters-panel__arrow">
-                    </button>
+                    <div class="filters-panel__mobile">
+                        <button class="filters-panel__button">
+                            Язык
+                            <img src="./icons/arrowWhite.svg" alt="arrow" class="filters-panel__arrow">
+                            <select>
+                                <option value="option1">Английский</option>
+                                <option value="option2">Французский</option>
+                                <option value="option3">Немецкий</option>
+                            </select>
+                        </button>
+                        <div class="filters-panel__filter">
+                            <img src="./icons/filter.svg" alt="filters" class="filters__filter-img">
+                        </div>
+                    </div>
                     <div class="filters-panel__text">Продолжительность</div>
                     <label for="range" class="filters-panel__range">От 1 до 6 мес.</label>
-                    <input id="range" type="range" class="filters-panel__input-range">
+                    <div class="filters-panel__range-wrapper">
+                        <input id="range" type="range" class="filters-panel__input-range">
+                    </div>
                     <div class="filters-panel__text">Сложность</div>
                     <ol class="filters-panel__level">
                         <li class="filters-panel__type">
-                            <input id="low" type="radio" name="level" class="filters-panel__checkbox">
+                            <input id="low" type="radio" name="level" class="filters-panel__radio">
                             <label for="low" class="filters-panel__style">Для всех</label>
                         </li>
                         <li class="filters-panel__type">
-                            <input id="med" type="radio" name="level" class="filters-panel__checkbox">
+                            <input id="med" type="radio" name="level" class="filters-panel__radio">
                             <label for="med" class="filters-panel__style">Для начинающих</label>
                         </li>
                         <li class="filters-panel__type">
-                            <input id="hard" type="radio" name="level" class="filters-panel__checkbox">
+                            <input id="hard" type="radio" name="level" class="filters-panel__radio">
                             <label for="hard" class="filters-panel__style">Продвинутый уровень</label>
                         </li>
                     </ol>
@@ -102,6 +120,7 @@
                             <img src="./icons/A-Z.png" alt="bgPic" class="cards__bg">
                             <img src="./icons/nameArrow.svg" alt="nameArrow" class="cards__name-arrow">
                             <img src="./icons/purple-women.png" alt="avatar" class="cards__woman">
+                            <img src="./icons/country.png" alt="country" class="cards__country">
                         </li>
                         <li class="cards__card"><div class="cards__title">Английский шаг за шагом:</div>
                             <div class="cards__level">Вводно-фонетический курс</div>
@@ -115,9 +134,10 @@
                                 <div class="cards__text">Подробнее</div>
                                 <img src="./icons/card-arrow.svg" alt="arrow" class="cards__more-arrow">
                             </a>
-                            <img src="./icons/A-Z.png" alt="bgPic" class="cards__bg">
+                            <img src="./icons/ae.png" alt="bgPic" class="cards__bg">
                             <img src="./icons/nameArrow.svg" alt="nameArrow" class="cards__name-arrow">
                             <img src="./icons/white-purple.png" alt="avatar" class="cards__woman">
+                            <img src="./icons/country.png" alt="country" class="cards__country">
                         </li>
                         <li class="cards__card"><div class="cards__title">Английский шаг за шагом:</div>
                             <div class="cards__level">Базовый уровень</div>
@@ -134,6 +154,7 @@
                             <img src="./icons/A-Z.png" alt="bgPic" class="cards__bg">
                             <img src="./icons/nameArrow.svg" alt="nameArrow" class="cards__name-arrow">
                             <img src="./icons/purple-women.png" alt="" class="cards__woman">
+                            <img src="./icons/country.png" alt="country" class="cards__country">
                         </li>
                         <li class="cards__card"><div class="cards__title">Английский шаг за шагом:</div>
                             <div class="cards__level">Вводно-фонетический курс</div>
@@ -147,9 +168,10 @@
                                 <div class="cards__text">Подробнее</div>
                                 <img src="./icons/card-arrow.svg" alt="arrow" class="cards__more-arrow">
                             </a>
-                            <img src="./icons/A-Z.png" alt="bgPic" class="cards__bg">
+                            <img src="./icons/ae.png" alt="bgPic" class="cards__bg">
                             <img src="./icons/nameArrow.svg" alt="nameArrow" class="cards__name-arrow">
                             <img src="./icons/white-purple.png" alt="avatar" class="cards__woman">
+                            <img src="./icons/country.png" alt="country" class="cards__country">
                         </li>
                     </ol>
                 </div>
@@ -173,5 +195,8 @@
             <div class="footer__corp">© DailyLangs | 2023. Все права защищены</div>
         </div>
     </footer>
+
+    <script src="./js/script.js"></script>
+
 </body>
 </html>
