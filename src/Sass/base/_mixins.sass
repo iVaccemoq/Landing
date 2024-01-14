@@ -1,0 +1,36 @@
+@mixin spans($fz)
+    color: #000
+    font-family: MulishExtraBold
+    font-size: $fz
+    font-style: normal
+    font-weight: 800
+    line-height: 120%
+    letter-spacing: 0.48px
+
+@mixin inputs
+    appearance: none
+    -webkit-appearance: none
+    -moz-appearance: none 
+    cursor: pointer
+
+@mixin inputs-before($size)
+    content: ''
+    display: inline-block
+    font-size: 20px
+    color: #000
+    width: $size
+    height: $size
+    border: 2px solid $main-color
+
+@mixin inputs-before-checked
+    content: ''
+    background-color: $main-color
+
+@mixin footer-text($fz)
+    color: #FFF
+    font-family: MulishMedium
+    font-size: $fz
+    font-style: normal
+    font-weight: 500
+    line-height: 120% 
+    letter-spacing: 0.18px
